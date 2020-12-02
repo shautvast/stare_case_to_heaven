@@ -1,5 +1,5 @@
 (function () {
-    let canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     canvas.onclick = () => {
