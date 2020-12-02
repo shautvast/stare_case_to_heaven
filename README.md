@@ -1,3 +1,1 @@
-__Gradients are pretty magic!__
-
-Lets you stare at passing clouds.
+__Lets you stare at passing clouds.__

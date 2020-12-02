@@ -11,16 +11,14 @@
         canvas.height = window.innerHeight;
     };
 
-    let i = 0, di = 1,
-        step = function () {
-            if ((i < 1000 && di > 0) || (i > 0 && di < 0)) {
-                i += di;
-                canvas.style.background = 'linear-gradient(' + i + 'deg, white , rgb(20,56,200))';
-            } else {
-                di = -di;
-            }
-            setTimeout(step, 150);
+    let start_timestamp = 0, angle = 0,
+        step = function (timestamp) {
+            angle = ((timestamp - start_timestamp) / 100) % 360;
+
+            canvas.style.background = 'linear-gradient(' + angle + 'deg, white , rgb(20,56,200))';
+
+            requestAnimationFrame(step);
         };
 
-    step();
+    requestAnimationFrame(step);
 })()
