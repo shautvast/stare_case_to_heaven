@@ -1,0 +1,15 @@
+body {
+    background: rgb(30, 66, 200);
+    overflow: hidden;
+}
+
+#sky {
+    background: rgb(30, 66, 200);
+}
+
+.cloud {
+    position: absolute;
+    background-size: 25px;
+    transition: left 5s, top 5s;
+    /*background: radial-gradient(circle 50px, rgba(255, 255, 255, 0.5), rgba(20, 56, 200, 0.0) 90%) no-repeat;*/
+}
